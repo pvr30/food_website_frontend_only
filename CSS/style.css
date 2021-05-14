@@ -1,0 +1,216 @@
+
+/* Navigatiion Bar*/
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.2;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+}
+
+#logo{
+    margin: 3px 10px;
+    padding-left: 20px;
+    padding-top: 1px;
+    padding-bottom: 0.1px;
+}
+#navbar ul{
+    display: flex;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: larger;
+}
+#navbar ul li a{
+    color: white;
+    text-decoration: none;
+    padding:3px 22px;
+    border-radius: 20px;
+    margin:10px;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+
+/* Home Section*/
+
+#home::before{
+    content: "";
+    background: url("../images/home_bg.jpg") no-repeat;
+    background-size: 100% 50%;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+    height: 300px;
+}
+
+
+#home h1{
+    color: black;
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: -10px;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+#home p{
+    color: black;
+    text-align: center;
+    font-size: 1.5rem;    
+    font-family: 'Roboto', sans-serif;
+}
+
+#home button{
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    background-color: brown;
+    border-radius: 20px;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+/*  Services Section*/
+#services{
+    display: flex;
+    margin: 34px;
+}
+.primary_tag{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Baloo Bhai 2', cursive;
+    margin: 5px 6px;
+}
+#services .box{
+    border: 2px solid red;
+    width: 500px;
+    margin: 3px 6px;
+    border-radius: 25px;
+    background: rgb(196, 192, 192)
+}
+.services_img{
+    height: 250px;
+    display: block;
+    margin: auto;
+}
+.services_tag{
+    text-align: center;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+.services_text{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* Contact Us Section*/
+
+#contact{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#contact::before{
+    content: "";
+    height: 80%;
+    width: 100%;
+    z-index: -1;
+    position:absolute;
+    background: url("../images/Contact_bg.jpg") no-repeat;
+    margin-top: 400px;
+    background-size: 100% 30%;
+}
+.contact-item{
+    margin: 50px;
+    cursor: pointer;
+}
+.contact-item img{
+    height: 110px;
+    width: 110px;
+}
+
+/* Feedbacks Section */
+#feedbacks::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: url("../images/feedback_bg.jpg") no-repeat;
+    position:absolute;
+    margin-top: 280px;
+    background-size: 100% 70%;
+}
+
+#feedbacks{
+    display: flex;
+    padding-bottom: 34px;
+    justify-content: center;
+    align-items: center;
+}
+.feed{
+    padding: 6px;
+}
+.feed label{
+    font-size: larger;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+.feed input,textarea{
+    width: 100%;
+    border: 2px solid black;
+    font-size: large;
+}
+
+#feedbutton{
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    background-color: brown;
+    border-radius: 20px;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 130px;
+}
+
+/* Footer */
+#footer{
+    text-align: center;
+    align-items: center;
+    margin-top: 30px;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+body{
+    background: rgb(243, 231, 208);
+}
